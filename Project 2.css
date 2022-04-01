@@ -1,0 +1,366 @@
+.header_part{
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 11px; 
+    text-align: center; 
+}
+.first_part{
+    min-width: 80%;
+    max-width: 100%;
+
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+@media screen and (max-width: 900px) {
+    .contactus{
+        display: none;
+    }
+    .loginpart p{
+        display: none;
+    }
+    .loginclild i{
+        display: none;
+    }
+    .brandname {
+        max-width:100%;
+        max-height:100%;
+        margin:auto;
+    }
+  }
+.brandname p{
+      padding-top: 0px;
+  }
+.contactus{
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.loginpart{
+    margin-top: 15px;
+}
+.loginclild{
+    margin-top: -3px;
+    margin-left: 20px;
+}
+.loginclild a{
+    color: white;
+}
+.signin{
+    margin-right: 10px;
+}
+.header_part2{
+    background-color: #0B3561;
+    color: #FFFFFF;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    font-size: 12px;
+    padding-top: 10px;
+  
+}
+.searchbar{
+    gap: 100px;
+    margin-top: 15px;
+   
+}
+.myaccount {
+    margin-left: 65%;
+    font-size: 12px;
+    gap: 25px;
+    float: right;
+    margin-top: 15px;
+}
+.myaccount :hover{
+    text-decoration-line: underline;
+}
+@media screen and (max-width: 900px) {
+    .secondpart{
+        background-color: black;
+        color: #FFFFFF;
+        width: 95%;
+        margin-top: -45px;
+        position: relative;
+        padding-top: 10px;
+        top: 45px;
+    }
+    .searchbar{
+
+        margin:auto;
+    }
+    .myaccount{
+        margin-top: 15px;
+        margin:auto; 
+    }
+    .myaccount .giftcer{
+        display: none;
+    }
+  }
+
+    @media screen and (max-width: 900px) {
+    .header_part2{
+        position: absolute;
+        top: 100px;
+        height: 47px;
+        width: 100%;
+    }
+
+  }
+  .thirtpart{
+      text-align: center;
+      font-family: "Franklin Gothic Medium", cursive;
+      background-color: #FFFFFF;
+  }
+  .header{
+    background: #FFFFFF;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 909;
+  padding: 15px 30px;
+  top: 80px;
+}
+
+nav .wrapper{
+  max-width: 1280px;
+  padding-right: 205px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container1{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav{
+  background:#FFFFFF;
+  width: 100%;
+
+}
+nav ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;  
+
+  }
+nav ul li{
+   float: left;
+   margin: 0 0 0 5px;
+   position: relative;
+   font-size: 15px;
+   letter-spacing: 1px;
+   font-weight: 300;
+   position: relative;
+
+}
+nav ul li a{
+   color: black;
+   text-decoration: none;
+   padding: 5px 5px;
+   display: block;
+   line-height: 1.5;
+}
+nav ul li:hover > a{
+   color: rgb(178, 231, 231);
+}
+nav ul ul{
+   position: absolute;
+   left: 28%;
+   top: 100%;
+  white-space: nowrap;
+  transition: all 3s ease-out; 
+  opacity: 0;
+  pointer-events: none;
+} 
+nav ul ul li{
+  float: none;
+  margin: 0;
+  border-bottom: 1px solid #FFFFFF; 
+}
+nav > ul > li > ul::after{
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  height: 16px;
+  width: 100%;
+
+}
+nav ul ul li a{
+  background: #131414;
+  color: aliceblue;
+}
+nav ul li:hover > ul{
+  opacity: 1;
+  pointer-events: auto;
+  
+}
+
+nav ul li:hover ul li:hover > a{
+  background: #c4dda7;
+  color: #0a0a0a;
+ 
+}
+.navicon{
+  display: none;
+}
+#check{
+  display: none;
+}
+body{
+   margin: 0;
+}
+nav ul ul ul{
+   left: 100%;
+   top: 0;
+}
+
+/* responsive part */
+@media only screen and ( min-width: 786px) and (max-width: 991px){
+   nav ul li a{padding: 5px 10px;}
+   nav ul li a{font-size: 16px; margin: 0; }
+}
+
+@media screen and ( max-width: 700px){
+  .navicon{
+      display: block;
+      position: relative;
+      font-size: 36px;
+      color: #FFFFFF;
+      cursor: pointer;
+      right:12% ;
+      bottom: 5px;
+  }
+ 
+  nav{
+      position: absolute;
+      left: 82%;
+      top: 146px;
+      padding: 0;
+      width: 100%;
+      background:#eb9a9a;
+      z-index: 100;
+      height: calc(100% - 74px);
+      overflow:auto;
+      width: calc(100% - 100px);
+      transition: all 0.3s ease-out;
+      transform: translateX(-100%);
+ }
+ .nav ul li{
+     
+     margin: 0 ! important;
+     border-bottom: 1px solid #FFFFFF;
+ }
+ .nav ul li a{
+  padding: 10px;
+
+}
+nav > ul > li:hover > a{
+  background: #0a0a0a;
+  color: #FFFFFF;
+}
+nav ul ul{
+  position: static;
+  pointer-events: auto;
+  opacity: 1;
+  height: 0;
+  overflow: hidden;
+}
+nav ul ul li a{
+  padding-left: 30px;
+}
+nav ul ul ul li a{
+  padding-left: 60px;
+}
+nav ul ul li i{
+  transform: rotate(0deg);
+  right: 10px;
+}
+nav ul li i{
+  transform: rotate(0deg);
+  right: 10px;
+}
+nav ul li:hover > ul{
+  height: auto;
+}
+#check{
+  opacity: 0;
+  position: fixed;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+#check:checked ~ nav{
+  left: 0%;
+}
+#check:checked ~ label #btn{
+  display: none ;
+}
+}
+.fifth{
+  height: 100px;
+  background-color: grey;
+  text-align: center;
+}
+.fifth h1{
+  margin-top: 25px;
+  padding-top: 25px;
+}
+.card-text{
+  text-align: center;
+}
+.sixth{
+  margin-top: 7%;
+}
+.row{
+  gap: 5px;
+}
+.card{
+  box-shadow: 2px 2px rgb(148, 231, 231);
+  
+}
+.card:hover{
+  opacity: 0.5;
+  border: 2px solid black;
+
+}
+.choosoption{
+ display: none;
+}
+.card:hover  .choosoption {
+display: inline-block;
+margin-left: 50px;
+}
+.seventhpart{
+  background-color: #0a0a0a;
+  color: #FFFFFF;
+  margin-top: 5%;
+  height: 185px;
+  padding-top: 10px;
+  border-bottom: 5px solid gray;
+}
+
+.seventhpart ul{
+  list-style: none;
+
+}
+.social h6{
+  margin-left: -12px;
+}
+.socialpart{
+  margin-left: -25px;
+}
+.scicon{
+  margin-left: 15px;
+}
+
+.eighthpart{
+  background-color: #0a0a0a;
+  color: #FFFFFF;
+}
